@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -642,6 +643,19 @@ body {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
+
+    nav {
+        gap: 3px;
+    }
+
+    nav .logo p {
+        font-size: 13px;
+    }
+
+    .hamburger {
+        width: 25px;
+        height: 16px;
+    }
 }
 
 
@@ -655,10 +669,25 @@ body {
     .book-menu .block {
         width: 100%;
     }
+
+
 }
 
 @media (max-width: 370px) {
     .book-menu .block {
         width: 90%;
+    }
+
+    nav {
+        gap: 3px;
+    }
+
+    nav .logo p {
+        font-size: 13px;
+    }
+
+    .hamburger {
+        width: 25px;
+        height: 16px;
     }
 }
