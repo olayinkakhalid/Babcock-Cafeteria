@@ -644,8 +644,13 @@ body {
     }
 
     .hamburger {
-    width: 20px;
-    height: 16px;
+        width: 20px;
+        height: 16px;
+    }
+
+    nav ul {
+        top: 79px;
+    }
 
     .hamburger .book-menu {
         display: grid;
