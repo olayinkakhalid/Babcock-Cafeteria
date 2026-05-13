@@ -50,10 +50,6 @@ nav ul {
 nav ul li {
     list-style: none;
     color: white;
-
-
-    padding: 10px 15px;
-    border-radius: 5px;
 }
 
 nav ul li:hover {
@@ -64,6 +60,10 @@ nav ul li:hover {
 nav ul a {
     color: white;
     text-decoration: none;
+
+    display: block;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 .heading {
@@ -267,8 +267,8 @@ body {
         justify-content: center;
     }
 
-    nav ul li {
-        padding: 8px 12px;
+    nav ul li a {
+        padding: 15px;
     }
 
     nav ul li:hover {
@@ -438,6 +438,10 @@ body {
     nav .logo img {
         width: 67px;
         height: 77px;
+    }
+
+    nav ul {
+        top: 90px;
     }
 }
 
