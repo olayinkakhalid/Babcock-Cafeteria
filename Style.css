@@ -638,7 +638,16 @@ body {
 
 
 @media (max-width: 450px) {
-    .book-menu {
+    nav .logo img {
+        width: 72px;
+        height: 59px;
+    }
+
+    .hamburger {
+    width: 20px;
+    height: 16px;
+
+    .hamburger .book-menu {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
