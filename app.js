@@ -9,6 +9,12 @@ document.addEventListener("DOMContentLoaded", () => {
         navLinks.classList.toggle("show");
     });
 
+    ulLink.forEach((link) => {
+        link.addEventListener("click", () => {
+            window.location.href = 'bookingPage.html';
+        });
+    });
+
     bookBtn.forEach((btn) => {
         btn.addEventListener("click", () => {
             window.location.href = 'bookingPage.html';
