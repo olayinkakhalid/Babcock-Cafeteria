@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Babcock Cafeteria</title>
 </head>
+
+
 
 <body>
 
@@ -15,7 +17,8 @@
 
     <nav>
         <div class="logo">
-            Babcock Online Cafeteria
+            <img src="/images/babcocklogo.png" alt="">
+            <p>Babcock Online Cafeteria</p>
         </div>
 
         <div class="hamburger" id="hamburger">
@@ -27,7 +30,7 @@
         <ul class="nav-links" id="navLinks">
             <li><a href="#">Home</a></li>
             <li><a href="#">Menu</a></li>
-            <li><a href="#">Booking</a></li>
+            <li><a href="/bookingPage.html">Booking</a></li>
             <li><a href="#">About</a></li>
         </ul>
     </nav>
@@ -36,7 +39,7 @@
 
         <!-------- body ---------->
 
-        <div class="heading">
+        <div class="heading" data-aos="fade-right" data-aos-duration="1500">
             <p class="main">YOUR MEAL, <br>
                 WITHOUT THE STRESS
             </p>
@@ -59,45 +62,73 @@
                 <p class="title">Main Menu</p>
 
                 <div class="sub-breakfast">
-                    <div class="option">
+                    <div class="option" data-aos="fade-right" data-aos-duration="1500">
                         <P class="sub-title">Saturday Breakfast</P>
                         <img src="/images/Cornflake.webp" alt="">
-                        <p>
-                            Cornflakes <br>
-                           Golden Morn/Bread/Granola With Milk, Milo, Sugar (Take Away)
-                        </p>
+                        <div class="flex-btn">
+                            <p>
+                                Golden Morn
+                                Golden Morn/Bread/Granola
+                                With Milk, Milo, Sugar (Take Away)
+                            </p>
+
+                            <button class="book-btn">
+                                Book Now
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="option">
+                    <div class="option" data-aos="fade-left" data-aos-duration="1500">
                         <P class="sub-title">Saturday Breakfast</P>
                         <img src="/images/goldenmore.jpg" alt="">
-                        <p>
-                            Golden Morn <br>
-                            Golden Morn/Bread/Granola With Milk, Milo, Sugar (Take Away)
-                        </p>
+                        <div class="flex-btn">
+                            <p>
+                                Golden Morn
+                                Golden Morn/Bread/Granola
+                                With Milk, Milo, Sugar (Take Away)
+                            </p>
+
+                            <button class="book-btn">
+                                Book Now
+                            </button>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
             <div class="special-deit">
-                <p class="title">Special Deit</p>
+                <p class="title">Special Diet</p>
 
                 <div class="sub-breakfast2">
-                    <div class="option">
+                    <div class="option" data-aos="fade-right" data-aos-duration="1500">
                         <P class="sub-title">Saturday Breakfast</P>
                         <img src="/images/Cornflake.webp" alt="">
-                        <p>
-                            Wheat Bread/Cornflakes/Golden Morn/Skimmed Milk
-                        </p>
+                        <div class="flex-btn">
+                            <p>
+                                Wheat Bread/
+                                Cornflakes/Golden
+                                Morn/Skimmed Milk
+                            </p>
+
+                            <button class="book-btn">
+                                Book Now
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="option">
+                    <div class="option" data-aos="fade-left" data-aos-duration="1500">
                         <P class="sub-title">Saturday Breakfast</P>
                         <img src="/images/goldenmore.jpg" alt="">
-                        <p>
-                            Wheat Bread/Cornflakes/Golden Morn/Skimmed Milk
-                        </p>
+                        <div class="flex-btn">
+                            <p>
+                                Wheat Bread/Cornflakes/Golden Morn/Skimmed Milk
+                            </p>
+
+                            <button class="book-btn">
+                                Book Now
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -113,45 +144,71 @@
                 <p class="title">Main Menu</p>
 
                 <div class="sub-breakfast">
-                    <div class="option">
-                        <P class="sub-title">Saturday Lunch</P>
+                    <div class="option" data-aos="fade-right" data-aos-duration="1500">
+                        <P class="sub-title">Lunch</P>
                         <img src="/images/beans.jpg" alt="">
-                        <p>
-                            Porridge Beans/Plain Beans, Jollof Spaghetti, With Stew/ Garri/ Wheat Bread/Fried Plantain
-                        </p>
+                        <div class="flex-btn">
+                            <p>
+                                Porridge Beans/Plain Beans, Jollof Spaghetti, With Stew/ Garri/ Wheat Bread/Fried
+                                Plantain
+                            </p>
+
+                            <button class="book-btn">
+                                Book Now
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="option">
-                        <P class="sub-title">Saturday Lunch</P>
+                    <div class="option" data-aos="fade-left" data-aos-duration="1500">
+                        <P class="sub-title">Lunch</P>
                         <img src="/images/jollofspag.avif" alt="">
-                        <p>
-                            Porridge Beans/Plain Beans, Jollof Spaghetti, With Stew/ Garri/ Wheat Bread/Fried Plantain
-                        </p>
+                        <div class="flex-btn">
+                            <p>
+                                Porridge Beans/Plain Beans, Jollof Spaghetti, With Stew/ Garri/ Wheat Bread/Fried
+                                Plantain
+                            </p>
+
+                            <button class="book-btn">
+                                Book Now
+                            </button>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
             <div class="special-deit">
-                <p class="title">Special Deit</p>
+                <p class="title">Special Diet</p>
 
                 <div class="sub-breakfast2">
-                    <div class="option">
-                        <P class="sub-title">Saturday Special Lunch</P>
+                    <div class="option" data-aos="fade-right" data-aos-duration="1500">
+                        <P class="sub-title"> Special Lunch</P>
                         <img src="/images/beans.jpg" alt="">
-                        <p>
-                            Cornflakes
-                            Golden Morn/Bread/Granola With Milk, Milo, Sugar (Take Away)
-                        </p>
+                        <div class="flex-btn">
+                            <p>
+                                Cornflakes
+                                Golden Morn/Bread/Granola With Milk, Milo, Sugar (Take Away)
+                            </p>
+
+                            <button class="book-btn">
+                                Book Now
+                            </button>
+                        </div>
                     </div>
 
-                    <div class="option">
-                        <P class="sub-title">Saturday Special Lunch</P>
+                    <div class="option" data-aos="fade-left" data-aos-duration="1500">
+                        <P class="sub-title"> Special Lunch</P>
                         <img src="/images/brownrice.jpg" alt="">
-                        <p>
-                            Cornflakes
-                           Golden Morn/Bread/Granola With Milk, Milo, Sugar (Take Away)
-                        </p>
+                        <div class="flex-btn">
+                            <p>
+                                Cornflakes
+                                Golden Morn/Bread/Granola With Milk, Milo, Sugar (Take Away)
+                            </p>
+
+                            <button class="book-btn">
+                                Book Now
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -164,54 +221,82 @@
         <p class="breakfast">Dinner</p>
 
         <div class="meals">
+
             <div class="main-menu">
                 <p class="title">Main Menu</p>
 
                 <div class="sub-breakfast">
-                    <div class="option">
-                        <P class="sub-title">Saturday Dinner</P>
+
+                    <div class="option" data-aos="fade-right" data-aos-duration="1500">
+                        <p class="sub-title">Dinner</p>
                         <img src="/images/ekowithmoimoi.jpg" alt="">
-                        <p>
-                            Eko with Moi Moi/ White macaroni/ Garri/ Boild plantain/ Yam pottage with tofu and stew/ Efo
-                            riro and fruit (apples)
-                        </p>
+
+                        <div class="flex-btn">
+                            <p>
+                                Eko with Moi Moi / White macaroni / Garri / Boiled plantain / Yam pottage with tofu and
+                                stew / Efo riro and fruit (apples)
+                            </p>
+
+                            <button class="book-btn">Book Now</button>
+                        </div>
                     </div>
 
-                    <div class="option">
-                        <P class="sub-title">Saturday Dinner</P>
+                    <div class="option" data-aos="fade-left" data-aos-duration="1500">
+                        <p class="sub-title">Dinner</p>
                         <img src="/images/macaroni.jpg" alt="">
-                        <p>
-                            Eko with Moi Moi/ White macaroni/ Garri/ Boild plantain/ Yam pottage with tofu and stew/ Efo
-                            riro and fruit (apples)
-                        </p>
-                    </div>
-                </div>
 
+                        <div class="flex-btn">
+                            <p>
+                                Eko with Moi Moi / White macaroni / Garri / Boiled plantain / Yam pottage with tofu and
+                                stew / Efo riro and fruit (apples)
+                            </p>
+
+                            <button class="book-btn">Book Now</button>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
             <div class="special-deit">
-                <p class="title">Special Deit</p>
+                <p class="title">Special Diet</p>
 
                 <div class="sub-breakfast2">
-                    <div class="option">
-                        <P class="sub-title">Saturday Special Dinner</P>
+
+                    <div class="option" data-aos="fade-right" data-aos-duration="1500">
+                        <p class="sub-title">Special Dinner</p>
                         <img src="/images/papwithmoimoi.jpg" alt="">
-                        <p>
-                            pap with moi moi/ boild water yam with steamed vegetables and tofu in stew
-                        </p>
+
+                        <div class="flex-btn">
+                            <p>pap with moi moi / boiled water yam with steamed vegetables and tofu in stew</p>
+                            <button class="book-btn">Book Now</button>
+                        </div>
                     </div>
 
-                    <div class="option">
-                        <P class="sub-title">Saturday Special Dinner</P>
+                    <div class="option" data-aos="fade-left" data-aos-duration="1500">
+                        <p class="sub-title">Special Dinner</p>
                         <img src="/images/boildyamwithsteammedvegetables.jpg" alt="">
-                        <p>
-                            pap with moi moi/ boild water yam with steamed vegetables and tofu in stew
-                        </p>
+
+                        <div class="flex-btn">
+                            <p>pap with moi moi / boiled water yam with steamed vegetables and tofu in stew</p>
+                            <button class="book-btn">Book Now</button>
+                        </div>
                     </div>
+
                 </div>
             </div>
+
         </div>
     </div>
+
+    </div>
+
+    <div class="footer">
+        &copy; 2026 Cafeteria
+    </div>
 </body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="app.js"></script>
 
 </html>
