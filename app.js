@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = 'bookingPage.html';
         });
     });
+    
     const breakfast = document.querySelector(".breakfast-section");
     const lunch = document.querySelector(".lunch-section");
     const dinner = document.querySelector(".dinner-section");
@@ -40,7 +41,6 @@ document.addEventListener("DOMContentLoaded", () => {
     function showBreakfast() {
         dinner.classList.remove("show");
 
-        // lunch.classList.remove("hide");
         breakfast.classList.remove("hide");
     }
 

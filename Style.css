@@ -658,7 +658,7 @@ body {
         top: 79px;
     }
 
-     .book-menu {
+    .book-menu {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -1008,4 +1008,62 @@ body {
         font-size: 22px;
     }
 
+}
+
+/* ABOUT PAGE STYLING */
+.div-descrip {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.descrip {
+    margin-top: 40px;
+}
+
+.descrip .sub-descrip {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descrip .sub-p-descrip {
+    font-size: 12px;
+    color: gray;
+    margin-top: 10px;
+
+    line-height: 1.4rem;
+}
+
+.live-status-info {
+    margin-top: 50px;
+}
+
+.live-status-head {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.live-status-subhead {
+    font-size: 12px;
+    color: gray;
+    margin-top: 10px;
+
+    line-height: 1.4rem;
+}
+
+.ul img {
+    width: 10px;
+}
+
+.ul li {
+    color: gray;
+    font-size: 12px;
+    line-height: 2rem;
+}
+
+@media (max-width: 768px) {
+    .div-descrip {
+        display: flex;
+        flex-direction: column;
+    }
 }
