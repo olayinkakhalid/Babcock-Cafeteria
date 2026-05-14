@@ -658,7 +658,7 @@ body {
         top: 79px;
     }
 
-    .hamburger .book-menu {
+     .book-menu {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
