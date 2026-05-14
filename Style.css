@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     overflow-x: hidden;
@@ -171,6 +175,8 @@ body {
 .option:hover {
     transform: translateY(-10px) scale(1.02);
     box-shadow: 0 20px 45px rgba(0, 0, 0, 0.14);
+
+
 }
 
 /* SMALL LABEL */
@@ -689,4 +695,317 @@ body {
         width: 25px;
         height: 21px;
     }
+}
+
+
+/* MENU PAGE CSS */
+
+.shortnav {
+    margin-bottom: 50px;
+    background: #d4af37;
+    padding: 10px 20px;
+}
+
+.shortnav-detail {
+    margin-bottom: 5px;
+    margin-top: 50px;
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.shortnav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.shortnav ul li {
+    list-style: none;
+}
+
+.shortnav ul li a {
+    /* text-decoration: none; */
+    color: #0f172a;
+    ;
+    font-weight: 700;
+    font-size: 35px;
+    padding: 10px 15px;
+    border-radius: 6px;
+}
+
+.menupage-menu {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menupage-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menupage-sub-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #0f172a;
+    position: relative;
+}
+
+.menupage-sub-heading::after {
+    content: "";
+    width: 70px;
+    height: 4px;
+    background: linear-gradient(90deg, #2563eb, #d4af37);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    border-radius: 20px;
+}
+
+.menupage-days-foods {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.menupage-days-foods .days {
+    padding-top: 12px;
+    width: 110px;
+    height: 50px;
+    text-align: center;
+    background: #d4af37;
+    color: white;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.menupage-days-foods .menupage-mainmenu {
+    background: white;
+    border-radius: 24px;
+    padding: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    transition: all 0.35s ease;
+    overflow: hidden;
+    position: relative;
+
+    width: 100%;
+    max-width: 400px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.menupage-days-foods .menupage-mainmenu:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.14);
+}
+
+.menupage-days-foods .menupage-menu-item {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #2563eb;
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.menupage-days-foods .menupage-mainmenu img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.menupage-days-foods .menupage-mainmenu p:last-child {
+    color: #4b5563;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.menupage-days-foods .menupage-mainmenu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg,
+            rgba(37, 99, 235, 0.15),
+            rgba(212, 175, 55, 0.12));
+    border-radius: 50%;
+    transform: translate(40%, -40%);
+}
+
+.intruction-arrow {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow,
+.arrow-lunch {
+    cursor: pointer;
+    padding-top: 35px;
+    display: inline-block;
+    animation: moveArrow 0.8s ease-in-out infinite alternate;
+}
+
+@keyframes moveArrow {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(10px);
+    }
+}
+
+.menu-slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.menu-section {
+    width: 100%;
+    transition: all 0.8s ease;
+}
+
+/* BREAKFAST STARTS VISIBLE */
+.breakfast-section {
+    position: relative;
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* LUNCH STARTS HIDDEN */
+.lunch-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+/* ANIMATION STATES */
+
+.breakfast-section.hide {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.lunch-section.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.dinner-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateX(100%);
+    opacity: 0;
+
+    transition: all 0.8s ease;
+}
+
+.dinner-section.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.lunch-section.hide {
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .heading .main {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .heading .sub-main {
+        font-size: 14px;
+    }
+
+    /* NAV */
+    .nav-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* HEADINGS */
+    .menupage-heading {
+        display: none;
+    }
+
+    /* EACH DAY SECTION */
+    .menupage-days-foods {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    /* DAY BOX */
+    .menupage-days-foods .days {
+        width: 100%;
+        max-width: 120px;
+    }
+
+    /* FOOD CARDS */
+    .menupage-days-foods .menupage-mainmenu {
+        width: 100%;
+    }
+
+    /* IMAGES */
+    .menupage-days-foods .menupage-mainmenu img {
+        height: 200px;
+    }
+
+    /* TITLES */
+    .menupage-sub-heading {
+        font-size: 1.4rem;
+    }
+
+    /* BREAKFAST / LUNCH / DINNER */
+    .intruction-arrow {
+        flex-direction: row;
+        margin-bottom: 20px;
+    }
+
+    .breakfast {
+        font-size: 28px;
+    }
+
+    /* SHORT NAV */
+    .shortnav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .shortnav ul li a {
+        font-size: 22px;
+    }
+
 }
